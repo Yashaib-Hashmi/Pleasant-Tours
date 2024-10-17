@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+    <script>
+        $(document).ready(function(){
+            $("#Showpassword").click(function(){
+                if($('#password').attr('type') == 'password'){
+                    $('#password').prop('type','text')
+                }else{
+                    $('#password').prop('type','password')
+                }
+            })
+           
+           
+            $("#login").click(function(){
+
+            var email = $("#email").val()
+            var password = $("#password").val()
+
+            var errors = ""
+
+            if(email == ""){
+                $("#email").removeClass("is-valid")
+                $("#email").addClass("is-invalid")
+                errors += "email";
+            }else{
+        
+                if(email.match(/^[A-z0-9_]+[@][a-z]{5}[.][a-z]{3}$/)){
+                    $("#email").removeClass("is-invalid")
+                    $("#email").addClass("is-valid")
+                    $("#e_msg").html("email is Valid")
+                    $("#e_msg").css("color","green")
+                }else{
+                    $("#email").removeClass("is-valid")
+                    $("#email").addClass("is-invalid")
+                    errors += "email";
+                    $("#e_msg").html("Email Pattern Not Match")
+                    $("#e_msg").css("color","red")
+                }  
+            }
+
+
+            if(password == ""){
+                $("#password").removeClass("is-valid")
+                $("#password").addClass("is-invalid")
+                errors += "password";
+            }else{
+                if(password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W]).{8,16}$/)){
+                    $("#password").removeClass("is-invalid")
+                    $("#password").addClass("is-valid")
+                    $("#p_msg").html("Password is Valid")
+                    $("#p_msg").css("color","green")
+                }else{
+                    $("#password").removeClass("is-valid")
+                    $("#password").addClass("is-invalid")
+                    errors += "password";
+                    $("#p_msg").html("1 Upper 1 Lower 1 Number 1 Special Character Length 8-16 ")
+                    $("#p_msg").css("color","red")
+                } 
+            }
+            
+            if(errors == ""){
+                var oldData = JSON.parse(localStorage.getItem("mydb"))||[]
+                var islogin = ""
+                for(var data of oldData){
+                    // console.log(data)
+                    // console.log(data.email)
+                    if(data.email == email && data.password == password){
+                        islogin += "Login Successfully"
+                        break;
+                    }
+                }
+                // Logic Logic Here
+                if(islogin == "Login Successfully"){
+                    alert("login Successfully")
+                    localStorage.setItem("islogin","islogin")
+                    location.assign("index.html")
+                }else{
+                    alert("Email Or password Not Correct")
+                }   
+            }
+           })
+        })
+    </script>
+
+</head>
+<body style="background-color: rgba(250, 250, 210, 0.274);">
+
+    <div class="d-flex justify-content-center"><img id="rotateicons" src="img/favicon.ico" class="image-fluid mt-3" alt=""></div>
+   <div class="container mt-3">
+    <div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-12 ">
+            <form action="" class="shadow p-2 fm">
+                <h3 class="p-2 text-center fmh3" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701);color: #fff;">LOGIN ACCOUNT</h3>
+                <input class="form-control mb-3 rounded-pill" type="email" id="email" placeholder="Entet your email">
+                <span id="e_msg"></span>
+                <input class="form-control mb-3 rounded-pill" type="password" id="password" placeholder="Entet your password">
+                <p id="p_msg"></p>
+                <input type="checkbox" id="Showpassword" class="ms-2 me-1 mb-4"><span style="font-weight: bold; color: #fff;">Show Password</span>
+                <div class="btn2 me-5"><button type="button" id="login" class="btn btn-success me-2 mb-3">Login</button></div>
+                <div class="anchor">No account?<a href="register.html" class="ms-2">Create new account</a></div>
+            </form>
+        </div>
+    </div>
+   </div>
+
+   <script src="logic.js"></script>
+   <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+        
+        <!-- Font Awesome -->
+        <link href= 
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+              rel="stylesheet"> 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+</head>
+<body style="background-color: rgba(250, 250, 210, 0.274);">
+  <!-- go to top button -->
+  <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+  <!-- javascript code -->
+   <script>
+    var go_top = document.getElementById("top_btn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+      if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+        go_top.style.display = "block";
+      }else{
+        go_top.style.display = "none";
+      }
+    }
+    function topFunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+   </script>
+  <!-- javascript code -->
+  <!-- go to top button -->
+  <!-- navbar start -->
+       <nav class="navbar navbar-expand-md navbar-light bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="rotateicons" src="img/favicon.ico" class="img-fluid " alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            </ul>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="index.html" id="hover">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="products.html" id="hover">Products</a>
+              </li>
+
+              <li class="nav-item" id="showbtn">
+                
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="About.html" id="hover">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="Contact.html" id="hover">Contact</a>
+              </li>
+
+              <li class="nav-item" id="login_out_bth">
+                
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input class="control me-2 rounded-pill" type="search" placeholder="Search" id="search_input" onclick="custom()" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+   <!-- navbar end -->
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+  <div class="ws_images"><ul>
+      <li><img src="data1/images/slider1.jpg" alt="slider1" title="slider1" id="wows1_0"/></li>
+      <li><img src="data1/images/slider2.jpg" alt="slider2" title="slider2" id="wows1_1"/></li>
+      <li><a href="http://wowslider.net"><img src="data1/images/slider3.jpg" alt="image carousel" title="slider3" id="wows1_2"/></a></li>
+      <li><img src="data1/images/slider4.jpg" alt="slider4" title="slider4" id="wows1_3"/></li>
+    </ul></div>
+    <div class="ws_bullets"><div>
+      <a href="#" title="slider1"><span><img src="data1/tooltips/slider1.jpg" alt="slider1"/>1</span></a>
+      <a href="#" title="slider2"><span><img src="data1/tooltips/slider2.jpg" alt="slider2"/>2</span></a>
+      <a href="#" title="slider3"><span><img src="data1/tooltips/slider3.jpg" alt="slider3"/>3</span></a>
+      <a href="#" title="slider4"><span><img src="data1/tooltips/slider4.jpg" alt="slider4"/>4</span></a>
+    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image slider</a> by WOWSlider.com v9.0</div>
+  <div class="ws_shadow"></div>
+  </div>	
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+  <!-- End WOWSlider.com BODY section -->          
+  
+  <!-- intor about our pleasant tours company -->
+    <h1 class="mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)">INTRODUCTION</h1>
+
+  <P style="text-align: justify; font-size: large;" class="p-3">Pleasant Tours Company is a renowned travel agency dedicated to providing exceptional travel experiences. With a focus on customer satisfaction, they offer a wide range of customized tours to breathtaking destinations worldwide. Their experienced team ensures every journey is meticulously planned and executed, from luxurious accommodations to immersive cultural experiences. Pleasant Tours prioritizes safety, comfort, and enjoyment, making travel hassle-free and memorable. Their commitment to sustainable tourism practices reflects their dedication to preserving the beauty of the places they visit. Whether it's a family vacation, romantic getaway, or adventure trip, Pleasant Tours guarantees a delightful and enriching experience for all travelers.</P>
+  <!-- intor about our pleasant tours company -->
+
+          <!-- show category cards -->
+          <h1 class="mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)">OUR CATEGORY</h1>
+           <div class="container mb-3">
+            <div class="row">
+              <!-- first card -->
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/beachcard.jpeg" class="img-fluid rounded-5" alt="..." style="height: 300px;width: 100%;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">BEACHES</h5>
+                      <p class="card-text" style="text-align: justify;">Golden sands stretch endlessly under the sun, where waves gently kiss the shore. Seagulls cry above, and the salty breeze carries the scent of the sea. A tranquil paradise, where time seems to stand still amidst nature's beauty.</p>
+                      <!-- <p class="card-text text-center"><small class="text-muted">All over beaches products category are avaliabel</small></p> -->
+                      <p><a id="hover" href="products.html#beach_products_section" class="btn-info rounded-pill btn mt-4">CLICK HERE</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- second card -->
+              <div  class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="img/hillscard.jpeg" class="img-fluid rounded-5" alt="..." style="height: 300px;width: 100%;" >
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">HILLS</h5>
+                        <p class="card-text" style="text-align: justify;">Hills rise gently, cloaked in lush green, offering a tranquil retreat.Birds chirp melodiously, harmonizing with the rustling leaves. As the sun dips, shadows dance, creating a serene and picturesque landscape.</p>
+                        <!-- <p class="card-text"><small class="text-muted">All over hills category are avaliabel</small></p> -->
+                        <p><a id="hover" href="products.html#hills_products_section" class="btn-info rounded-pill btn mt-4">CLICK HERE</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- third card center -->
+           <div class="container">
+            <div class="row">
+              <!-- first card -->
+              <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rivercard.jpeg" class="img-fluid rounded-5" alt="..." style="height: 300px;width: 100%;">
+                  </div>
+                  <div class="col-md-8" >
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Rivers & Lakes</h5>
+                      <p class="card-text" style="text-align: justify;">A river winds with restless grace, a journey from mountain's face,  
+                        It carves its path through earth and stone, a force of nature, all alone.  
+                        A lake lies still in quiet repose, a mirror to the sky’s soft glow,  
+                        In tranquil depths and placid sheen, it holds a world serene, unseen.</p>
+                      <!-- <p class="card-text"><small class="text-muted">All over rivers,lakes category are avaliabel</small></p> -->
+                      <p><a id="hover" href="products.html#river&lakes_products_section" class="btn-info rounded-pill btn mt-4">CLICK HERE</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- show category cards -->
+<br>   
+        <!-- Gallery start -->
+
+      <h1 class="mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)">OUR GALLERY</h1>
+<div class="container-fluid">
+<div class="row">
+        <!-- beach image -->
+    <div class="col-sm-8 col-md-8 col-lg-8 pb-2">
+    <img id="hover" src="img/newbeach.jpeg"
+     class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+    </div>
+    <!-- beach image -->
+      <div class="col-sm-4 col-md-4 col-lg-4 pb-2">
+      <img id="hover" src="img/beach1 (2).jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+      </div>
+    <!-- beach image -->
+      <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+      <img id="hover" src="img/Beachcardimage2.jpg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+      </div>
+    <!-- beach image -->
+      <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+      <img id="hover" src="img/beach1 (1).jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+      </div>
+      <!-- beach image -->
+    <div class="col-sm-8 col-md-8 col-lg-8 pb-2">
+      <img id="hover" src="img/beachsurfboard.jpeg"class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+      </div>
+      <!-- beach image -->
+        <div class="col-sm-4 col-md-4 col-lg-4 pb-2">
+        <img id="hover" src="img/beach1 (3).jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+      <!-- hills image -->
+        <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+        <img id="hover" src="img/hills1.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+      <!-- hills image -->
+        <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+        <img id="hover" src="img/hills2.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+        <!-- hills image -->
+    <div class="col-sm-8 col-md-8 col-lg-8 pb-2">
+      <img id="hover" src="img/hills3.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+      </div>
+      <!-- hills image -->
+        <div class="col-sm-4 col-md-4 col-lg-4 pb-2">
+        <img id="hover" src="img/hills6.jpeg" class="d-block w-100 image-fluid" alt="..." style="height:400px;">
+        </div>
+      <!-- hills image -->
+        <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+        <img id="hover" src="img/hills4.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+      <!-- hills image --> 
+        <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+        <img id="hover" src="img/hills5.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+      <!-- river image --> 
+      <div class="col-sm-8 col-md-8 col-lg-8 pb-2">
+        <img id="hover" src="img/lake1.jpeg"class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+        <!-- river image -->
+          <div class="col-sm-4 col-md-4 col-lg-4 pb-2">
+          <img id="hover" src="img/river4.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+        <!-- river image -->
+          <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+          <img id="hover" src="img/lake2.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+        <!-- river image -->
+          <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+          <img id="hover" src="img/river6.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+                <!-- river image --> 
+      <div class="col-sm-8 col-md-8 col-lg-8 pb-2">
+        <img id="hover" src="img/lake4.jpg"class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+        </div>
+        <!-- river image -->
+          <div class="col-sm-4 col-md-4 col-lg-4 pb-2">
+          <img id="hover" src="img/river7.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+        <!-- river image -->
+          <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+          <img id="hover" src="img/river8.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+        <!-- river image -->
+          <div class="col-sm-6 col-md-6 col-lg-6 pb-2">
+          <img id="hover" src="img/lake3.jpeg" class="d-block w-100 image-fluid" alt="..." style="height: 400px;">
+          </div>
+</div>
+</div>
+  <!-- Gallery end -->
+<br>
+<!-- most visited places -->
+<div class="mb-5 text-center" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h2>MOST VISTITED PLACES</h2></div>
+ <div class="container">
+  <div class="row">
+    <!-- first place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/france.jpg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">F R A N C E</p>
+      </div>
+      <!-- second place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/maldives.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">M A L D I V E S</p>
+      </div>
+      <!-- third place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/kashmir.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">K A S H M I R</p>
+      </div>
+      <!-- forth place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/thailand.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">T H A I L A N D</p>
+      </div>
+      <!-- fifth place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/switzerland.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">S W I T Z E R L A N D</p>
+      </div>
+      <!-- sixth place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/singapur.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">S I N G A P O R E</p>
+      </div>
+      <!-- seven place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/dubai.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">D U B A I</p>
+      </div>
+      <!-- eight place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/japan.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">J A P A N</p>
+      </div>
+      <!-- nine place -->
+    <div class="col-sm-6 col-md-4 col-lg-4 pb-2">
+      <img src="img/austria.jpeg" class="d-block w-100 image-fluid card" alt="..." style="height: 300px; border-radius: 15px;">
+      <p style="justify-content: center;display: flex;text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)" class="mt-3">A U S T R I A</p>
+      </div>
+  </div>
+ </div>
+<!-- most visited places -->
+
+  <!-- footer start -->
+<footer class="footer mt-5">
+   <div class="container-fluid"> 
+    <div class="row pt-5"> 
+          <div class="col-sm-12 col-md-3 col-lg-3 justify-content-center d-flex pb-2">
+              <img id="rotateicons" src="img/favicon.ico" alt="" class="img-fluid" style="width: 40%;"> 
+          </div> 
+          <div class="col-sm-12 col-md-3 col-lg-3"> 
+              <h5 class="text-center">About Us</h5> 
+              <p style="text-align: justify;"> 
+                Welcome to Pleasant Tours, your gateway to unforgettable adventures! We specialize in creating personalized travel experiences that blend luxury. 
+              </p> 
+          </div> 
+          <div class="col-sm-12 col-md-3 col-lg-3"> 
+              <h5 class="text-center">Contact Us</h5> 
+              <ul class="list-unstyled text-center">
+                <li>Phone: +1-800-123-4567</li>
+                  <li>Email: info@Pleasanttours.com</li> 
+                  <li>Address: 177 A Bleeckers St, New York</li> 
+              </ul> 
+          </div> 
+          <div class="col-sm-12 col-md-3 col-lg-3"> 
+              <h5 class="text-center">Follow Us</h5> 
+              <li class="list-inline-item justify-content-center d-flex pt-3">
+              <ul class="list-inline footer-links">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/login/">
+                        <i id="rotateicons" class="fab fa-facebook "></i> 
+                  </a> 
+                  </li> 
+                <li class="list-inline-item"> 
+                  <a href="https://twitter.com/i/flow/login">
+                        <i id="rotateicons" class="fab fa-twitter "></i> 
+                  </a> 
+                </li> 
+                <li class="list-inline-item"> 
+                  <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                        <i id="rotateicons" class="fab fa-instagram "></i> 
+                  </a> 
+                </li> 
+                <li class="list-inline-item"> 
+                  <a href="https://www.linkedin.com/login"> 
+                        <i id="rotateicons" class="fab fa-linkedin "></i>
+                    </a> 
+                  </li> 
+              </ul> 
+          </div> 
+      </div> 
+      <hr> 
+      <div class="row"> 
+          <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+              <p>&copy; 2024 [Pleasant Tours]. All rights reserved.</p> 
+          </div> 
+          
+      </div> 
+  </div> 
+</footer>  
+          <!-- footer end -->
+
+<script>
+         var nav = "";
+
+        if(localStorage.getItem("islogin")){
+
+              document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction  logouta" onclick="logouta()"  id="hover">Logout</a>`
+
+        nav += `
+                <a class="nav-link active fw-bold  package_a" aria-current="page" href="Packages.html" id="hover">Packages</a>  
+               `
+
+        }else{
+          document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction logina" onclick="logina()" href="login.html" id="hover">Login</a>`
+        }
+            document.getElementById("showbtn").innerHTML = nav;
+
+        function logouta(){
+              localStorage.removeItem("islogin")
+              location.assign("index.html")
+        }
+ </script>
+<!-- custom logic files -->
+<script src="js/bootstrap.js"></script>
+<script src="logic.js"></script>
+<!-- custom logic files -->
+</body>
+</html>

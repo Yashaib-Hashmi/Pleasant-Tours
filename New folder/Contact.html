@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="js/jquery.js"></script>
+    <script src="logic.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+     <link href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <style>
+        #Side-icon{ height: 4rem; font-size: 3rem; transition: transform 1.3s; }
+        #Side-icon:hover{ transform: rotateY(180deg); }
+        #Side-icons{ 
+          /* position: fixed; */
+          bottom: 300px;
+          right: 10px;
+          justify-content: end; display:flex;
+        }
+    </style>
+</head>
+<body style="background-color: rgba(250, 250, 210, 0.274);">
+   <!-- go to top button -->
+   <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+   <!-- javascript code -->
+    <script>
+     var go_top = document.getElementById("top_btn");
+     window.onscroll = function() {scrollFunction()};
+     function scrollFunction(){
+       if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+         go_top.style.display = "block";
+       }else{
+         go_top.style.display = "none";
+       }
+     }
+     function topFunction(){
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+    </script>
+   <!-- javascript code -->
+   <!-- go to top button -->
+<!-- navbar start -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img id="rotateicons" src="img/favicon.ico" class="img-fluid " alt="" style="width: 100px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      </ul>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="index.html" id="hover">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="products.html" id="hover">Products</a>
+        </li>
+
+        <li class="nav-item" id="showbtn">
+          
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="About.html" id="hover">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="Contact.html" id="hover">Contact</a>
+        </li>
+
+        <li class="nav-item" id="login_out_bth">
+          
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="control me-2 rounded-pill" type="search" placeholder="Search" id="search_input" onclick="custom()" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
+
+                    
+           <!-- contact start -->
+            <div class="container"></div>
+         <div class="text-center fw-bolder mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h1>CONTACT US</h1></div>
+             <div class="contact-form">
+                    <h2 style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)">Send Us A Message</h2>
+                  <form id="contact-form">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" class="rounded-pill form-control" >
+                    <p id="fn_masg"></p>
+                  <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" class="rounded-pill form-control" >
+                   <p id="fe_masg"></p>
+               <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" class="rounded-pill form-control" >
+                
+              <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="6"  class="round-3 form-control" ></textarea>
+                  <!-- <a id="send_anchor" href="mailto:hyashaib@gmail.com" class="btn btn-primary rounded-pill justify-content-center p-2 d-none">Send Message</a> -->
+                <button id="send_btn" type="button" class="rounded-pill btn-primary justify-content-center ">Send Message</button>
+            </form>    
+        </div>
+          </div>
+                    <!-- contact end -->
+                    
+              </div>
+                   <!-- locaation info start-->
+                           <div class="map">
+                            <div class="text-center fw-bolder mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h1>OUR LOCATION</h1></div>
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0170064239123!2d67.07182317632422!3d24.86326874514341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1721510521929!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                   
+                           <!-- <div class="locations" style="display: flex;justify-content:space-evenly;">
+                             
+                            </div>
+                            </div>
+                            </div>
+                           </div>
+                          </div> -->
+                       <!-- </div> -->
+                       <!-- locaation info end-->
+              <!-- footer start -->
+<footer class="footer mt-2">
+  <div class="container-fluid"> 
+   <div class="row pt-5"> 
+         <div class="col-sm-12 col-md-3 col-lg-3 justify-content-center d-flex pb-2">
+             <img id="rotateicons" src="img/favicon.ico" alt="" class="img-fluid" style="width: 40%;"> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">About Us</h5> 
+             <p style="text-align: justify;"> 
+               Welcome to Pleasant Tours, your gateway to unforgettable adventures! We specialize in creating personalized travel experiences that blend luxury. 
+             </p> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">Contact Us</h5> 
+             <ul class="list-unstyled text-center">
+               <li>Phone: +1-800-123-4567</li>
+                 <li>Email: info@Pleasanttours.com</li> 
+                 <li>Address: 177 A Bleeckers St, New York</li> 
+             </ul> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">Follow Us</h5> 
+             <li class="list-inline-item justify-content-center d-flex pt-3">
+             <ul class="list-inline footer-links">
+              <li class="list-inline-item">
+                 <a href="https://www.facebook.com/login/"> 
+                       <i id="rotateicons" class="fab fa-facebook "></i> 
+                 </a> 
+                 </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://twitter.com/i/flow/login">
+                       <i id="rotateicons" class="fab fa-twitter "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                       <i id="rotateicons" class="fab fa-instagram "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.linkedin.com/login"> 
+                       <i id="rotateicons" class="fab fa-linkedin "></i>
+                   </a> 
+                 </li> 
+             </ul> 
+         </div> 
+     </div> 
+     <hr> 
+     <div class="row"> 
+         <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+             <p>&copy; 2024 [Pleasant Tours]. All rights reserved.</p> 
+         </div> 
+         
+     </div> 
+ </div> 
+</footer>  
+         <!-- footer end -->
+          
+ <script>
+      var nav = "";
+
+      if(localStorage.getItem("islogin")){
+
+          document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction  logouta" onclick="logouta()"   id="hover">Logout</a>`
+
+          nav += `
+              <a class="nav-link active fw-bold  package_a" aria-current="page" href="Packages.html" id="hover">Packages</a>  
+            `
+
+      }else{
+           document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction logina" onclick="logina()" href="login.html" id="hover">Login</a>`
+      }
+          document.getElementById("showbtn").innerHTML = nav;
+
+      function logouta(){
+          localStorage.removeItem("islogin")
+          location.assign("index.html")
+      }
+      // form logics start
+      $(document).ready(function(){
+
+        $("#send_btn").click(function(){
+
+          var name = $("#name").val()
+          var email = $("#email").val()
+          var subject = $("#subject").val()
+          var message = $("#message").val()
+          var anydata = "";
+
+          if(name === ""){
+                $("#name").removeClass("is-valid")
+                $("#name").addClass("is-invalid")
+                anydata += "name";
+                $("#fn_masg").html("Name feild empty")
+                    $("#fn_masg").css("color","red")
+            }else{
+                
+                if(name.match(/^[A-z\W]{0,16}$/)){
+                    $("#name").removeClass("is-invalid")
+                    $("#name").addClass("is-valid")
+                    $("#fn_masg").html("Name is Valid")
+                    $("#fn_masg").css("color","black")
+                }else{
+                    $("#name").removeClass("is-valid")
+                    $("#name").addClass("is-invalid")
+                    anydata += "name";
+                    $("#fn_masg").html("Name Pattern Not Match")
+                    $("#fn_masg").css("color","red")
+                }
+            }
+
+          if(email === ""){
+            $("#email").removeClass("is-valid")
+                $("#email").addClass("is-invalid")
+                anydata +="email";
+                $("#fe_masg").html("Email feild empty")
+                    $("#fe_masg").css("color","red")
+          }else{
+          
+            if(email.match(/^[A-z0-9_]+[@][a-z]{5}[.][a-z]{3}$/)){
+                $("#email").removeClass("is-invalid")
+                $("#email").addClass("is-valid")
+                $("#fe_masg").html("email is Valid")
+                    $("#fe_masg").css("color","black")
+            }else{
+                    $("#email").removeClass("is-valid")
+                    $("#email").addClass("is-invalid")
+                    anydata += "email";
+                    $("#fe_masg").html("Email Pattern Not Match")
+                    $("#fe_masg").css("color","red")
+            }
+          }
+
+          if(subject ===""){
+                $("#subject").removeClass("is-valid")
+                $("#subject").addClass("is-invalid")
+                anydata +="subject";
+          }else{
+                $("#subject").removeClass("is-invalid")
+                $("#subject").addClass("is-valid")
+          }
+
+          if(message ===""){
+                $("#message").removeClass("is-valid")
+                $("#message").addClass("is-invalid")
+                anydata +="message";
+          }else{
+                $("#message").removeClass("is-invalid")
+                $("#message").addClass("is-valid")
+          }
+        
+          if(anydata == ""){
+            const mailtoLink = `mailto:hyashaib@gmail.com?subject=${subject}&body=Message: ${message}%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A`;
+    window.location.href = mailtoLink;
+           alert("Message Send Successfully")
+
+          }else{
+            alert("Please fill all fields")
+          }
+        })
+      })
+      // form logics end
+</script> 
+<!-- custom logic files -->
+<script src="js/bootstrap.js"></script>
+<!-- custom logic files -->
+</body>
+</html>

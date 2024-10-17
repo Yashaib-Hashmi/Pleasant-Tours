@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">
+     
+        
+        <!-- Font Awesome -->
+        <link href= 
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+              rel="stylesheet"> 
+
+    
+</head >
+<body style="background-color: rgba(250, 250, 210, 0.274);">
+   <!-- go to top button -->
+   <button type="button" class="rounded-pill" onclick="topFunction()" id="top_btn">Top</button>
+   <!-- javascript code -->
+    <script>
+     var go_top = document.getElementById("top_btn");
+     window.onscroll = function() {scrollFunction()};
+     function scrollFunction(){
+       if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+         go_top.style.display = "block";
+       }else{
+         go_top.style.display = "none";
+       }
+     }
+     function topFunction(){
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+    </script>
+   <!-- javascript code -->
+   <!-- go to top button -->
+<!-- navbar start -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img id="rotateicons" src="img/favicon.ico" class="img-fluid " alt="" style="width: 100px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      </ul>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="index.html" id="hover">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="products.html" id="hover">Products</a>
+        </li>
+
+        <li class="nav-item" id="showbtn">
+          
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="About.html" id="hover">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="Contact.html" id="hover">Contact</a>
+        </li>
+
+        <li class="nav-item" id="login_out_bth">
+          
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="control me-2 rounded-pill" type="search" placeholder="Search" id="search_input" onclick="custom()" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
+
+<!-- packages start -->
+   <!-- <section beach packages> -->
+    <div class="text-center mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h1>BEACH PACKAGES</h1></div>
+    <div class="container-fluid pb-3" >
+    <div class="row" id="beach_packages">  
+
+  </div>
+</div>
+   <!-- <section hills packages> -->
+    <div class="text-center mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h1>HILL PACKAGES</h1></div>
+    <div class="container-fluid pb-3" >
+    <div class="row" id="hills_packages">  
+
+  </div>
+</div>
+   <!-- <section river & lakes packages> -->
+    <div class="text-center fw-bolder mb-5" style="text-shadow: 2px 10px 5px rgba(128, 128, 128, 0.701)"><h1>RIVER & LAKE PACKAGES</h1></div>
+    <div class="container-fluid pb-3" >
+    <div class="row" id="river_lakes_packages">
+
+  </div>
+</div>
+ <!-- packages end -->
+<!-- footer start -->
+<footer class="footer mt-5">
+  <div class="container-fluid"> 
+   <div class="row pt-5"> 
+         <div class="col-sm-12 col-md-3 col-lg-3 justify-content-center d-flex pb-2">
+             <img id="rotateicons" src="img/favicon.ico" alt="" class="img-fluid" style="width: 40%;"> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">About Us</h5> 
+             <p style="text-align: justify;"> 
+               Welcome to Pleasant Tours, your gateway to unforgettable adventures! We specialize in creating personalized travel experiences that blend luxury. 
+             </p> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">Contact Us</h5> 
+             <ul class="list-unstyled text-center">
+               <li>Phone: +1-800-123-4567</li>
+                 <li>Email: info@Pleasanttours.com</li> 
+                 <li>Address: 177 A Bleeckers St, New York</li> 
+             </ul> 
+         </div> 
+         <div class="col-sm-12 col-md-3 col-lg-3"> 
+             <h5 class="text-center">Follow Us</h5> 
+             <li class="list-inline-item justify-content-center d-flex pt-3">
+             <ul class="list-inline footer-links">
+              <li class="list-inline-item">
+                 <a href="https://www.facebook.com/login/"> 
+                       <i id="rotateicons" class="fab fa-facebook "></i> 
+                 </a> 
+                 </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://twitter.com/i/flow/login">
+                       <i id="rotateicons" class="fab fa-twitter "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.instagram.com/accounts/login/?hl=en"> 
+                       <i id="rotateicons" class="fab fa-instagram "></i> 
+                 </a> 
+               </li> 
+               <li class="list-inline-item"> 
+                 <a href="https://www.linkedin.com/login"> 
+                       <i id="rotateicons" class="fab fa-linkedin "></i>
+                   </a> 
+                 </li> 
+             </ul> 
+         </div> 
+     </div> 
+     <hr> 
+     <div class="row"> 
+         <div class="col-sm-12 col-md-12 col-lg-12 text-center"> 
+             <p>&copy; 2024 [Pleasant Tours]. All rights reserved.</p> 
+         </div> 
+         
+     </div> 
+ </div> 
+</footer>  
+         <!-- footer end -->
+     
+<script>
+      var nav = "";
+
+if(localStorage.getItem("islogin")){
+
+    document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction  logouta" onclick="logouta()"  id="hover">Logout</a>`
+
+    nav += `
+        <a class="nav-link active fw-bold  package_a" aria-current="page" href="Packages.html" id="hover">Packages</a>  
+      `
+
+}else{
+  location.assign("login.html")
+     document.getElementById("login_out_bth").innerHTML = `<a class="nav-link active fw-bold loginfunction logina" onclick="logina()" href="login.html" id="hover">Login</a>`
+}
+    document.getElementById("showbtn").innerHTML = nav;
+
+function logout(){
+    localStorage.removeItem("islogin")
+    location.assign("index.html")
+}
+// show packages cards
+var packages=[
+    [1,"SILVER","img/beachpackage.jpg","Durations: 3 days 2 nights","Accomodation: 3-star beachfront hotel,Transportation Round-Trip airport transfers","Activites: Guided Beach Walk,Snorkeling trip to nearby reef","Beach bonfire with's more and drinks,Meals: Daily Breakfast, 1 lunch and 1 dinner",100000,"Beaches","word documents/BEACH PACKAGE DETAILS SILVER.docx"],
+    [2,"GOLD","img/beachpackaged.jpg","Duration: 4 days, 3 nights","Accomodation:4-star beachfront resort,Transportation: Round-trip airport transfers and private car service","Activities:Guided Beach Walk,Snorkeling trip to nearby reef","Beach bonfire with's mores and drinks,Sunset cruise with champagne and appetizers,Meals:Daily breakfast, 2 lunches, and 2 dinners",150000,"Beaches","word documents/BEACH PACKAGE DETAIL GOLD.docx"],
+    [3,"DIAMOND","img/beachpackages.jpeg","Duration: 5 days, 4 nights","Accomodation: 5-star luxury beachfront villa,Transportation: Round-trip airport transfers, private car service, and helicopter tour","Activities:Guided Beach Walk,Snorkeling trip to nearby reef","Beach bonfire with's mores and drinks,Sunset cruise with champagne and appetizers, Private beach dinner with personalized service,Meals: Daily breakfast, 3 lunches, and 3 dinners",200000,"Beaches","word documents/BEACH PACKAGE DETAIL DIAMOND.docx"],
+    [4,"SILVER","img/shillpackage.jpeg","2-night stay in a cozy hillside resort","Guided hike to a nearby summit","Visit to a local village and tea plantation","Campfire and stargazing session - Transportation to and from the hillsMeals and refreshmentsExpert guide and support staffActivities and entrance fees as mentioned",100000,"Hills","word documents/HILL PACKAGE DETAILS SILVER.docx"],
+    [5,"GOLD","img/ghillpackage.jpeg","3-night stay in a luxurious hillside resort","Guided hike to a nearby summit and scenic valley","Visit to a local village, tea plantation, and waterfall","- Campfire, stargazing, and live music sessionComplimentary spa treatment - Transportation to and from the hillsMeals and refreshmentsExpert guide and support staffActivities and entrance fees as mentioned",150000,"Hills","word documents/HILL PACKAGE DETAILS GOLD.docx"],
+    [6,"DIAMOND","img/dhillpackage.jpeg","4-night stay in a premium hillside resort with private balcony","Guided hike to a nearby summit, scenic valley, and sunrise point","Visit to a local village, tea plantation, waterfall, and ancient temple","- Campfire, stargazing, live music, and personalized butler service Complimentary spa treatment and gourmet dinner - Transportation to and from the hillsMeals and refreshmentsExpert guide and support staffActivities and entrance fees as mentioned",200000,"Hills","word documents/HILL PACKAGE DETAILS DIAMOND.docx"],
+    [7,"SILVER","img/sriverpackage.jpeg","2-night stay in a riverside resort","Guided boat tour on the lake","Fishing and kayaking activities","Visit to a nearby waterfalls and village Campfire and stargazing session - Transportation to and from the river and lake Meals and refreshments Expert guide and support staffActivities and entrance fees as mentioned",100000,"Rivers & Lakes","word documents/RIVER&LAKE PACKAGE DETAILS SILVER.docx"],
+    [8,"GOLD","img/griverpackage.jpeg","3-night stay in a lakeside resort with private balcony","Guided boat tour on the lake and river rafting","Fishing, kayaking, and paddleboarding activities","Visit to a nearby waterfalls, village, and ancient temple - Campfire, stargazing, and live music session Complimentary spa treatment Visit to a nearby waterfalls and village Campfire and stargazing session - Transportation to and from the river and lake Meals and refreshments Expert guide and support staffActivities and entrance fees as mentioned",150000,"Rivers & Lakes","word documents/RIVER&LAKE PACKAGE DETAILS GOLD.docx"],
+    [9,"DIAMOND","img/driverpackage.jpeg","4-night stay in a luxury lakefront resort with private pool","Guided boat tour on the lake, river rafting, and sunset cruise","Fishing, kayaking, paddleboarding, and snorkeling activities","- Visit to a nearby waterfalls, village, ancient temple, and scenic hike Campfire, stargazing, live music, and personalized butler serviceComplimentary spa treatment, gourmet dinner, and wine tasting Visit to a nearby waterfalls and village Campfire and stargazing session - Transportation to and from the river and lake Meals and refreshments Expert guide and support staffActivities and entrance fees as mentioned",200000,"Rivers & Lakes","word documents/RIVER&LAKE PACKAGE DETAILS DIAMOND.docx"]
+]
+
+var BeachesCategory="";
+var HillsCategory="";
+var Rivers_Lakes_Category="";
+var storepackages=[];
+for (const iterator of packages) {
+    if(storepackages.includes(iterator[8])){
+         // condition first check storepackages is empty or not
+    }else{
+        // MAIN LOGIC
+        storepackages.push(iterator[8])
+    }
+
+    if(iterator[8] == "Beaches"){
+        BeachesCategory +=`
+        <div id="productcards" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 16rem;">
+               <img src="${iterator[2]}" class="card-img-top" alt="..." style="height:300px">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold text-center" style="text-shadow: 2px 10px 4px rgba(128, 128, 128, 0.701);">${iterator[1]}</h5>
+                      <div id="seemore"><p class="card-text">${iterator[3]}</p>
+                      <p class="card-text">${iterator[4]}</p>
+                      <p class="card-text">${iterator[5]}</p>
+                      <p class="card-text">${iterator[6]}</p></div>
+                      <p class="card-text fw-bold">Rs.${iterator[7]}</p>
+                    <a href="#" id="hover" class="btn btn-primary rounded-pill">Book Now</a><br>
+                    <a href="${iterator[9]}" id="hover" class="btn btn-primary rounded-pill" download >Download Details</a>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+
+    if(iterator[8] == "Hills"){
+        HillsCategory +=`
+         <div id="productcards" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 16rem;">
+                <img src="${iterator[2]}" class="card-img-top" alt="..." style="height:300px">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold text-center" style="text-shadow: 2px 10px 4px rgba(128, 128, 128, 0.701);">${iterator[1]}</h5>
+                      <div id="seemore"><p class="card-text">${iterator[3]}</p>
+                      <p class="card-text">${iterator[4]}</p>
+                      <p class="card-text">${iterator[5]}</p>
+                      <p class="card-text">${iterator[6]}</p></div>
+                      <p class="card-text fw-bold">Rs.${iterator[7]}</p>
+                    <a href="#" id="hover" class="btn btn-primary rounded-pill">Book Now</a><br>
+                    <a href="${iterator[9]}" id="hover" class="btn btn-primary rounded-pill" download >Download Details</a>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+
+    if(iterator[8] == "Rivers & Lakes"){
+        Rivers_Lakes_Category +=`
+         <div id="productcards" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 16rem;">
+                <img src="${iterator[2]}" class="card-img-top" alt="..." style="height:300px">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold text-center" style="text-shadow: 2px 10px 4px rgba(128, 128, 128, 0.701);">${iterator[1]}</h5>
+                      <div id="seemore"><p class="card-text">${iterator[3]}</p>
+                      <p class="card-text">${iterator[4]}</p>
+                      <p class="card-text">${iterator[5]}</p>
+                      <p class="card-text">${iterator[6]}</p></div>
+                      <p class="card-text fw-bold">Rs.${iterator[7]}</p>
+                    <a href="#" id="hover" class="btn btn-primary rounded-pill">Book Now</a><br>
+                    <a href="${iterator[9]}" id="hover" class="btn btn-primary rounded-pill download ">Download Details</a>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+    
+}
+ document.getElementById("beach_packages").innerHTML = BeachesCategory
+ document.getElementById("hills_packages").innerHTML = HillsCategory
+ document.getElementById("river_lakes_packages").innerHTML = Rivers_Lakes_Category
+ //show packages cards
+ 
+</script>
+<!-- custom logic files -->
+<script src="js/bootstrap.js"></script>
+<script src="logic.js"></script>
+<!-- custom logic files -->
+</body>
+</html>
